@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="d:\Web_Dev\JS">
+
+    <script>
+
+        function myfunction() {
+            var num1 = document.getElementById("item1").value;
+            var isPrime = true;
+            for (var i = 2; i < num1; i++) {
+                if (num1 % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+                
+
+            }
+            if (isPrime == true) {
+                    document.write("It's Prime");
+                } else {
+                    document.write("It's not Prime")
+                }
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <form>
+
+        <label>Is it Prime?</label>
+        <input type="number" id="item1" name="item1"></input>
+        <input type="button" id="btn1" value="Submit" onclick="myfunction()">
+    </form>
+
+
+</body>
+
+</html>

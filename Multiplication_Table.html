@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="d:\Web_Dev\JS">
+
+    <script>
+
+        function myfunction() {
+           var numt = document.getElementById("item1").value;
+           
+           for( var i=1; i<=10; i++){
+            var result = numt*i
+            document.write(" "+numt+" x "+i+" = "+result+"<br>");
+
+
+           }
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <form>
+
+        <label>Multiplication Table</label>
+        <input type="number" id="item1" name="item1"></input>
+        <input type="button" id="btn1" value="Submit" onclick="myfunction()">
+    </form>
+
+
+</body>
+
+</html>

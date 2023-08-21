@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="d:\Web_Dev\JS">
+
+    <script>
+
+        function myfunction() {
+            const fname = document.getElementById("fname").value;
+            const lname = document.getElementById("lname").value;
+            document.write(fname);
+            document.write(lname);
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <div>
+
+            <label>First Name : </label>
+            <input type="text" id="fname" name="fname"></input><br><br>
+            <label>Last Name : </label>
+            <input type="text" id="lname" name="lname"></input> <br><br><br><br>
+            <a>
+                <input type="button" value="submit" onclick="myfunction()"></input>
+            </a>
+        </div>
+
+</body>
+
+</html>

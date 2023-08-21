@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+</head>
+
+<body>
+<p>
+    <h1 style="border: 2px solid rgb(178, 28, 140);">
+        Survery Form
+    </h1>
+</p>
+<label style="background-color: aquamarine;" for="CFN">Customer First Name </label><input style="border: 5px solid rgb(54, 96, 51);background-color: rgb(24, 137, 178); border-radius: 50px;" type="text" id="CFN" placeholder="Gabriel"><br>    
+<label style="border: 7px solid rgb(224, 168, 12);background-color: rgb(174, 26, 156); border-radius: 50px; for='CLN'""><h2>Customer Last Name </label><input style="border: 5px solid rgb(54, 96, 51);background-color: chartreuse; border-radius: 50px; type="text" id="CLN" placeholder="Smith"></h2><br>  
+<label style="border: 3px solid rgb(107, 8, 15);background-color: rgba(197, 47, 47, 0.415); border-radius: 50px; for="Adr">Address </label><input type="text" id="Adr" placeholder="899 W Pender Str"><br>
+<label style="border: 5px solid rgb(54, 96, 51);background-color: chartreuse; border-radius: 50px; for="City">City</label><input type="text" id="City" placeholder="Vancouver"><br>
+<label style="background-color: rgb(150, 139, 161); for="Phone">Phone </label><input type="number"id="Phone" name="phone" placeholder="123-456-7890" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/><br>
+<label style="border: 8px solid rgb(54, 96, 51);background-color: chartreuse; border-radius: 50px; for="BDay">Birthday </label><input type="date" id="BDay" min="1915/01/01" max="2023/12/31"><br>    
+<label style="border: 50px solid rgb(54, 96, 51);background-color: rgb(43, 22, 77); border-radius: 50px; for="list">Status in Canada </label><input list="list" name="list"/><br>
+<datalist id="list">
+<option value="Student"></option>
+<option value="Worker"></option>
+<option value="PR"></option></datalist>
+
+<label for="Gender"> Gender </label><br>
+<input type="checkbox" id="male"><label for="male"><mark>Male</mark></label>
+<input type="checkbox" id="female"><label for="female"><sup>Fe</sup>ma<sub>le</sub></label><br>
+
+<label for="Skill">Skill </label><br>   
+<input type="radio"id="Skill" name="Skill" value="Skill"/><label id="Skill"><i>Run Really Fast</i></label> <br>
+<input type="radio"id="Skill" name="Skill" value="Skill"/><label id="Skill"><u>Punch Really Hard</u></label><br>
+<input type="radio"id="Skill" name="Skill" value="Skill"/><label id="Skill"><del>Jump Really High</del></label><br>
+
+<label for="img"> Young ME </label><br><input type="image" src="D:\Web Dev\3X4.jpg"  alt="i came a long way" width="300" height="400"><br>  
+<label for="YRH">Your Resume Here </label><input type="file" id="YRH"><br>   
+<label for="Rate"> Rate Us! </label><br>
+<input type="radio" id="Rate"><label for="Rate">1</label>
+<input type="radio" id="Rate"><label for="Rate">2</label>
+<input type="radio" id="Rate"><label for="Rate">3</label>
+<input type="radio" id="Rate"><label for="Rate">4</label>
+<input type="radio" id="Rate"><label for="Rate">5</label><br><br>
+<input type="button" onclick="alert('Submitted!!')" id="b1" name="SUBMIT!!" value="SUBMIT!!"/><br>
+
+</body>
+</html>

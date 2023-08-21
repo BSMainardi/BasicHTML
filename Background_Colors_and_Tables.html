@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 2</title>
+</head> <!-- so the style must be inside the head tag, NOT THE BODY TAG, and is gonna change the tables-->
+<style>
+th, td {
+ border: 2px solid black;
+ border-radius: 20px;
+ border-collapse: collapse;
+}
+  
+</style>
+<!-- border-collapse for no spaces between the boxes -->
+<!-- border-radius to change the radius of the box -->
+<!-- to change only the table, only change the table, not the td or tr -->
+<body>
+   
+<p>
+    <h1 style="background-color: yellow;"> 'Sup man</h1>
+    <!--this is for background colors, choose color-->
+    <h1 style="background-color: rgb(255, 79, 101);"> 'Sup man</h1>
+    <!--this is for background colors, rgb (value of red, value of green, value of blue)--> 
+    <h1 style="background-color: #ff2357;"> 'Sup man</h1>
+    <!--this is for background colors, hex (format = #ffffff)--> 
+    <h1 style="background-color: hsla(9, 100%, 40%, 0.5);"> 'Sup man</h1>
+    <!--this is for background colors, hsla(hue, saturation, lightness, alpha)--> 
+    <h1 style="border: 6px solid blue;">hey    </h1>
+    <!--this is for border around the text, the thickness (2-4-6-..px), and color of the border-->
+</p>
+
+<table style="border: solid 2px black;"><!-- this for style your table -->
+    <!-- this for make a table -->
+    <tr><!-- this one to make a row -->
+        <th style="border: solid 6px orange;">first name</th><!-- this for table header -->
+        <th style="border: solid 6px rgb(169, 120, 27);">last name</th>
+        <th style="border: solid 6px rgb(102, 33, 142);">Country</th>
+    </tr>
+    <tr>
+        <td>a</td><!-- this for table values -->
+        <td>x</td>
+        <td>m</td>
+    </tr>
+    <tr>
+        <tr style=""></tr>
+        <td>b</td>
+        <td>y</td>
+        <td>n</td>
+    </tr>
+    <tr>
+        <td>c</td>
+        <td>z</td>
+        <td>o</td>
+    </tr>
+</table>
+
+
+</body>
+</html>

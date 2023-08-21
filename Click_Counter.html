@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="d:\Web Dev\JS"> -->
+
+    <script>
+        var count = 0;
+        var button = document.getElementById("btn1");
+
+        function plus() {
+            count++;
+            document.getElementById("item1").innerHTML = count;
+        }
+    </script>
+</head>
+
+<body>
+
+    <button id="btn1" onclick="plus()">Click me</button>
+    <p id="item1">0</p>
+
+</body>
+
+</html>

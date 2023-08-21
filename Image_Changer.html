@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="d:\Web Dev\JS">
+
+    <script>
+
+        function myfunction() {
+            var num1 = document.getElementById("ph1");
+            if( num1.src == "https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"){
+                num1.src = "https://geographical.co.uk/wp-content/uploads/Photographing-mountains-in-spring-1200x800.jpg";
+            } else {
+                num1.src = "https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+            }
+
+// d:\Web Dev\media\me.jpg
+            
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <form>
+
+       
+        <img id="ph1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-9K156xCLr31CAhEcbX-4GmQfzTxLnCf4cajPB4isRu04N59gtN1mSx1wYmCRBkqYJFU&usqp=CAU" alt="3x4" width="600" height="400"><br>
+        
+        
+       <!-- "d:\Web Dev\media\me.jpg"    -->
+
+
+        <input type="button" id="btn1" value="Submit" onclick="myfunction()">
+
+    </form>
+
+
+</body>
+
+</html>

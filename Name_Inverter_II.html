@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="d:\Web Dev\JS"> -->
+
+    <script>
+
+        function myfunction() {
+            let result = 0
+            let number = document.getElementById("item1").value;
+
+            result = (number).split('').reverse().join('');
+
+            document.write(result + "<br>");
+
+            for (i = number.length - 1; i >= 0; i--) {
+                document.write(number[i]);
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form>
+
+        <label>enter name</label>
+        <input type="text" id="item1" name="item1"></input><br>
+        <input type="button" id="btn1" value="Submit" onclick="myfunction()">
+
+    </form>
+
+
+</body>
+
+</html>

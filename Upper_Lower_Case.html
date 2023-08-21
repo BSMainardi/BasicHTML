@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="d:\Web Dev\JS"> -->
+
+    <script>
+
+        function myfunction() {
+            var fname = document.getElementById("item1").value;
+            // string methods
+            // length
+            // document.write(fname.length+"<br>");
+            // //slice bernardo = bern,ardo
+            // var slicestr = fname.slice(0,6);
+            // document.write("Sliced String"+"<br>", slicestr);
+            //substring
+            // var substr1 = fname.substring(1,3);
+            // document.write(substr1);
+            // var substr1 = fname.substring(-1,-3); 
+            // document.write(substr1)
+            // replace
+            // var names = "hi from vancouver, vancouver";
+            // var result = names.replace("vancouver", "richmond")
+            // document.write(result);
+            // var names = "hi from vancouver, vancouver";
+            // var result = names.replaceAll("vancouver", "richmond")
+            // document.write(result);
+            document.write(fname.toUpperCase());
+            document.write(fname.toLowerCase());
+
+
+
+
+                }
+
+    </script>
+</head>
+
+<body>
+
+    <form>
+
+        <label>enter name</label>
+        <input type="text" id="item1" name="item1"></input><br>
+        <input type="button" id="btn1" value="Submit" onclick="myfunction()">
+
+    </form>
+
+
+</body>
+
+</html>

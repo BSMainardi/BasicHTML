@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="d:\Web Dev\JS"> -->
+
+    <script>
+
+        function myfunction() {
+            var rem, temp, final = 0;
+            var number = Number(document.getElementById("item1").value);
+
+            temp = number; //121
+            while (number > 0) {
+                rem = number % 10; //121 = 1
+                number = parseInt(number / 10); //12,1
+                final = final * 10 + rem; //
+                console.log(final);
+
+            }
+if(final==temp){
+    
+}
+
+
+            if (result == number) {
+                document.write("It's a Palindrome")
+            } else {
+                document.write("It's not a Palindrome")
+
+            }
+
+            // if you wanna do it mathematicaly, 2 const , 1 for the number (const 1), 
+            //1 for the reversenumber(const2).
+            // divide  by 10, put the reminder on the const2. divide the result of division, 
+            // multiply the const 2 by 10, then add the next reminder. keep this until reminder is 0.
+            // after compare const 1 to const 2, if equal then palindrome. 
+
+
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <form>
+
+        <label>enter number</label>
+        <input type="number" id="item1" name="item1"></input><br>
+
+        <input type="button" id="btn1" value="Submit" onclick="myfunction()">
+
+    </form>
+
+
+</body>
+
+</html>

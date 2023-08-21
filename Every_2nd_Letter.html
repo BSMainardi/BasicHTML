@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="d:\Web Dev\JS"> -->
+
+    <script>
+
+        // function myfunction() {
+        //     var fname = document.getElementById("item1").value;
+        //     for(var i=0; i<fname.length; i=i+2){
+        //         document.write(fname[i]);
+        //     }
+            
+        // }
+        function myfunction() {
+            var fname = document.getElementById("item1").value;
+            for(var i=1; i<fname.length; i=i+2){
+                document.write(fname[i]);
+            }
+            
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <form>
+
+        <label>enter name</label>
+        <input type="text" id="item1" name="item1"></input><br>
+        <input type="button" id="btn1" value="Submit" onclick="myfunction()">
+
+    </form>
+
+
+</body>
+
+</html>

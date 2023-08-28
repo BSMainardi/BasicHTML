@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script>
+
+        var a = 10;
+        var b = 11;
+        var c = 2;
+
+        function myfunction() {
+
+           
+
+            if ((a < b) && (a < c)) {
+                if (b < c) {
+
+                    document.write(a+","+b+","+c);
+                } else {
+                    document.write(a+","+c+","+b);
+                }
+            }
+        else if ((b < a) && (b < c)) {
+                    if (a < c) {
+                        document.write(b+","+a+","+c);
+                    } else {
+                        document.write(b+","+c+","+a);
+                    }
+                } else {
+
+                    if (a < b) {
+                        document.write(c+","+a+","+b);
+                    } else {
+                        document.write(c+","+b+","+a);
+                    }
+                }
+            }
+        
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button class="btn-info" onclick="myfunction()"> Submit</button>
+</body>
+
+</html>
